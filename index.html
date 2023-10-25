@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
   <div class="wrapper">
@@ -61,9 +62,9 @@
 
       <section class="page1-bottom">
         <div class="image1">
+          <span class="material-symbols-outlined">arrow_downward</span>
           <img src="assets/photos/mae-mu-hugb85v0J04-unsplash.jpg" alt="green lettuce salad head on black background" width="2394" height="1918" loading="lazy">
         </div>
-        arrow
         <div class="text2">
           <p>
             Crispy iceberg lettuce Caribbean red habanero blueberry chia 
@@ -71,12 +72,16 @@
             thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette 
             heat mint potato chocolate cookie seeds samosa walnut mushroom tart.
           </p>
+          <div class="arrow-container">
+            <a href="#page2-link">Explore menu<span class="material-symbols-outlined">arrow_right_alt</span></a>
+          </div>
+          
         </div>
-        arrow
       </section>
     </div>
 
     <div class="page2">
+      <div id="page2-link"></div>
       <section class="page2-top">
         <div class="image2">
           <img src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg" alt="a blue and black bowl containing a delicious dish full of e.g. chickpeas, beans, olives and figs" width="1796" height="2183" loading="lazy">
@@ -85,37 +90,52 @@
         </div>
       </section>
       <section class="page2-bottom">
-        <div>
-          <h3>halloumi moklieh</h3>
-          <span class="menu-new">new!</span>
-          <p>deep-fried halloumi</p>
-        </div>
-        <div>
-          <h3>mojaddara</h3>
-          <p>green lentis with rice and fried onion</p>
-        </div>
-        <div>
-          <h3>chiar & laban</h3>
-          <p>lebanese spicy yoghurt with chopped cucumber</p>
-        </div>
-        <div>
-          <h3>warak inab</h3>
-          <p>rice- and veggie-filled dolma with mint and lemon</p>
-        </div>
-        <div>
-          <h3>moutabbal batinzian</h3>
-          <span class="menu-vegan">vegan</span>
-          <p>smoked chopped aubergine, sesame paste, garlic and lemon</p>
-        </div>
-        <div>          
-          <h3>ardishoki</h3>
-          <span class="menu-popular">popular</span>
-          <p>artichoke with lemon and garlic marinade</p>
-        </div>
-        <div>
-          <h3>mhmara</h3>
-          <p>spicy bell pepper relish with crushed walnuts and pomegranate syrup</p>
-        </div>
+        <dl>
+          <div class="halloumi">
+            <dt>halloumi moklieh</dt>
+            <span class="menu-new">new!</span>
+            <dd>deep-fried halloumi</dd>
+            <dd class="price">195 kr</dd>
+          </div>
+
+          <div>
+            <dt>mojaddara</dt>
+            <dd>green lentis with rice and fried onion</dd>
+            <dd class="price">135 kr</dd>
+          </div>
+          
+          <div>
+            <dt>chiar & laban</dt>
+            <dd>lebanese spicy yoghurt with chopped cucumber</dd>
+            <dd class="price">95 kr</dd>
+          </div>
+
+          <div>
+            <dt>warak inab</dt>
+            <dd>rice- and veggie-filled dolma with mint and lemon</dd>
+            <dd class="price">85 kr</dd>
+          </div>
+
+          <div class="moutabbal">
+            <dt>moutabbal batinzian</dt>
+            <span class="menu-vegan">vegan</span>
+            <dd>smoked chopped aubergine, sesame paste, garlic and lemon</dd>
+            <dd class="price">175 kr</dd>
+          </div>
+
+          <div class="ardishoki">
+            <dt>ardishoki</dt>
+            <span class="menu-popular">popular</span>
+            <dd>artichoke with lemon and garlic marinade</dd>
+            <dd class="price">199 kr</dd>
+          </div>
+
+          <div>
+            <dt>mhamara</dt>
+            <dd>spicy bell pepper relish with crushed walnuts and pomegranate syrup</dd>
+            <dd class="price">123 kr</dd>
+          </div>
+        </dl>
       </section>
     </div>
 
@@ -160,15 +180,19 @@
       </section>
 
       <section class="page3-bottom">
-        <div class="image3">
-          <img class="restaurant-image" src="assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg" width="2398" height="1596" alt="table setting with wine and water glasses, cutleries and menues at a restaurant" loading="lazy">
-          <div class="contact-list">
-            <ul>
-              <li>+46 8 123 45 67</li>
-              <li>book@toughcookie.com</li>
-              <li>Brända Tomten 111 31 Stockholm</li>
-            </ul>
-          </div>
+
+        <div class="contact-list">
+          <div class="contact-bg-image"></div>
+          <div class="text3">
+          <ul>
+            <li class="phone"><span class="material-symbols-outlined">call</span></li>
+            <li class="phone-text">+46 8 123 45 67</li>
+            <li class="at"><span class="material-symbols-outlined">alternate_email</span></li>
+            <li class="at-text">book@toughcookie.com</li>
+            <li class="location"><span class="material-symbols-outlined">location_on</span></li>
+            <li class="location-text">Brända Tomten 111 31 Stockholm</li>
+          </ul>
+        </div>
         </div>
       </section>
 

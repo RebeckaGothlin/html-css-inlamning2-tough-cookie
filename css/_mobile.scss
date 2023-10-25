@@ -19,6 +19,11 @@ header {
         display: flex;
         background-color: black;
         justify-content: center;
+        position: fixed; 
+        width: 100vw;
+        height: 50px;
+        top: 0;      
+        z-index: 999;
     }
     button {
         width: 35px;
@@ -99,6 +104,7 @@ header {
 }
 
 .page1 {
+    padding-top: 50px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -108,31 +114,34 @@ header {
         position: relative;
         text-transform: uppercase;
         padding: 30px;
+        width: 10rem;
+        margin: 0 auto;
         } 
         .tahini {
             color: #00FF38;
             order: 2;
             position: absolute;
             top: 50%;
+            right: 25%;
             transform: translateY(-50%);
             z-index: 3;
             font-size: 2rem;
         }
         .drizzle {
             color: #AB76FF;
-            order: 2;
+            order: 1;
             position: absolute;
             top: 23%;
-            right: 31.4%;
+            right: 25.5%;
             transform: translateY(-50%);
             font-size: 0.76rem;
         }
         .chickpeas {
             color: #FFF136;
-            order: 2;
+            order: 3;
             position: absolute;
             top: 73%;
-            left: 51.2%;
+            left: 30%;
             transform: translateY(-50%);
             z-index: 2;
             font-size: 0.77rem;
@@ -146,12 +155,21 @@ header {
     }
     .page1-bottom {
         .image1 {
-            display: table;
+            margin-bottom: 10px;
             img {
                 width: 70%;
                 height: auto;
                 margin: 0 auto;
-            }
+            }           
+            .material-symbols-outlined {
+                font-size: 3rem;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+            }                
+        }
         }
         .text2 {
             background: white;
@@ -162,6 +180,20 @@ header {
             margin: 0 auto;
             border-left: 7px solid #FFF136;
         }
+        .arrow-container {
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+           .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        } 
+        
+        
     }
 }
 
@@ -191,18 +223,30 @@ header {
         color: black;
         padding-bottom: 20px;
         div {
+            padding-top: 15px;
             text-align: center;
             display: block;
             background-color: #FFFFFF;
             border-top: 2px black solid;
             border-bottom: 2px black solid;
             margin: 10px;
-            h3 {
+            }
+            .halloumi, .moutabbal, .ardishoki {
+                padding-top: 0;
+            }
+            dt {
                 display: inline;
                 padding-right: 7px;
+                font-weight: bold;
+                text-transform: uppercase;
             }
-            p {
+            dd {
                 padding-bottom: 10px;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            .price {
+                font-weight: bold;
+                font-family: 'Roboto Condensed', sans-serif;
             }
             .menu-new {
                 font-family: 'Courier New', Courier, monospace;
@@ -229,18 +273,21 @@ header {
             .menu-popular {
                 font-family: 'Courier New', Courier, monospace;
                 text-transform: uppercase;
+                margin-block: 20px;
+                background-color: #FFF136;
                 display: inline-block;
-                background-color: yellow;
-                padding: 1px 3px;
-                transform: rotate(-1.5deg);
+                padding: 0 12px;
+                transform: rotate(-3deg);
                 font-weight: bold;
+                margin-bottom: 5px;
             }
         
         }
     }
-}
+
 
 .page3 {
+    position: relative;
     .page3-top {
         color: black;
         background-color: #00FF38;
@@ -292,42 +339,78 @@ header {
         background-color: #00FF38;
         padding-top: 20px;
         padding-bottom: 20px;
-        .image3 {
+        .contact-list {
             position: relative;
             text-align: center;
             color: #26BFF1;
-            object-fit: cover;
-        }
-            .restaurant-image {
-                width: 239.8px;
-                height: 239.8px;
-                object-fit: cover;
+            width: 239.8px;
+            height: 239.8px;
+            margin: 0 auto;
+        } 
+            .contact-bg-image {
+                background-image: url(/assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
                 filter: blur(1.5px);
             }   
-            .contact-list {
+            .material-symbols-outlined {
+                font-size: 1.8rem;
+            }
+            li {
+                list-style: none;
+                text-shadow: black 2px 2px;
+            }
+            .phone {
                 position: absolute;
                 top: 30%;
-                bottom: 50%;
-                left: 45%;
-                transform: translate(-50%, -50%);
-                text-align: left;
-            } 
-            li {
-                list-style-type: none;
-                margin: 20px;
-                text-shadow: black 2px 2px;
+                left: 13%;
+            }
+            .phone-text {
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                font-size: 1rem;
+            }
+            .at {
+                position: absolute;
+                top: 50%;
+                left: 13%;
+            }
+            .at-text {
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                font-size: 1rem;
+            }
+            .location {
+                position: absolute;
+                top: 70%;
+                left: 13%;
+                width: 150px;
+                text-align: justify;
+            }
+            .location-text {
+                position: absolute;
+                top: 70%;
+                left: 30%;
                 width: 100px;
+                text-align: left;
+                font-size: 1rem;
             }
     }
     .cookie-banner {
-        overflow: hidden;
         display: flex;
         background-color: #AB76FF;
         padding: 10px;
-        width: 100vw;
+        width: 100%;
         height: 40px;
         position: absolute;
-        margin: 0 auto;
+        overflow: hidden;
     }
         .cookie-p {
             justify-content: space-between;
