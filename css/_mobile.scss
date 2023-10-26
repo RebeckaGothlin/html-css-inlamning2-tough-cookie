@@ -104,7 +104,6 @@ header {
 }
 
 .page1 {
-    padding-top: 50px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -113,51 +112,46 @@ header {
     .tahini-container {
         position: relative;
         text-transform: uppercase;
-        padding: 30px;
-        width: 10rem;
-        margin: 0 auto;
-        } 
-        .tahini {
-            color: #00FF38;
-            order: 2;
+        min-width: 200px;
+        min-height: 200px;
+    }
+        .tahini-inner-container {
             position: absolute;
             top: 50%;
-            right: 25%;
-            transform: translateY(-50%);
-            z-index: 3;
-            font-size: 2rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .drizzle, .chickpeas {
+            position: absolute;
+        }
+        .tahini {
+            color: #00FF38;
+            font-size: 4rem;
         }
         .drizzle {
             color: #AB76FF;
-            order: 1;
-            position: absolute;
-            top: 23%;
-            right: 25.5%;
-            transform: translateY(-50%);
-            font-size: 0.76rem;
+            top: -10px;
+            right: 2px;
+            font-size: 1.55rem;
         }
         .chickpeas {
             color: #FFF136;
-            order: 3;
-            position: absolute;
-            top: 73%;
-            left: 30%;
-            transform: translateY(-50%);
-            z-index: 2;
-            font-size: 0.77rem;
+            left: 9px;
+            bottom: -4px;
+            font-size: 1.55rem;
+            z-index: -1;
         }
     .text1 {
         color: #00FF38;
         text-align: justify;
         width: 70%;
         margin: 0 auto;
-        
     }
     .page1-bottom {
         .image1 {
             margin-bottom: 10px;
             img {
-                width: 70%;
+                max-width: 60%;
                 height: auto;
                 margin: 0 auto;
             }           
@@ -176,7 +170,7 @@ header {
             color: #AB76FF;
             padding: 1px 15px 1px 15px;
             text-align: justify;
-            width: 50%;
+            width: 65%;
             margin: 0 auto;
             border-left: 7px solid #FFF136;
         }
@@ -192,8 +186,6 @@ header {
             'GRAD' 0,
             'opsz' 24
         } 
-        
-        
     }
 }
 
@@ -413,14 +405,14 @@ header {
         height: 40px;
         position: absolute;
         overflow: hidden;
+        justify-content: space-between;
     }
         .cookie-p {
-            justify-content: space-between;
-            margin: 0 auto;
+            margin: 0;
             font-family: 'Roboto Condensed', sans-serif;
         }            
         .decline {
-            width: 100px;
+            width: 90px;
             background-color: #FFF136;
             border: none;
             border-radius: 7px;
@@ -431,7 +423,7 @@ header {
             color: black;
         }
         .accept {
-            width: 100px;
+            width: 90px;
             background-color: #00FF38;
             border: none;
             border-radius: 7px;
