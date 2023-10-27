@@ -23,7 +23,8 @@ header {
         width: 100vw;
         height: 50px;
         top: 0;      
-        z-index: 999;
+        left: 0;
+        z-index: 999;    
     }
     button {
         width: 35px;
@@ -156,7 +157,7 @@ header {
                 margin: 0 auto;
             }           
             .material-symbols-outlined {
-                font-size: 3rem;
+            font-size: 3rem;
             font-variation-settings:
             'FILL' 0,
             'wght' 400,
@@ -212,67 +213,65 @@ header {
         }
     }
     .page2-bottom {
-        color: black;
-        padding-bottom: 20px;
-        div {
-            padding-top: 15px;
-            text-align: center;
-            display: block;
-            background-color: #FFFFFF;
-            border-top: 2px black solid;
-            border-bottom: 2px black solid;
-            margin: 10px;
-            }
-            .halloumi, .moutabbal, .ardishoki {
-                padding-top: 0;
-            }
-            dt {
+            .food-menu {
                 display: inline;
                 padding-right: 7px;
                 font-weight: bold;
                 text-transform: uppercase;
+                list-style: none;
             }
-            dd {
+            li {
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding-bottom: 20px;
+                padding-top: 15px;
+                color: black;
+                text-align: center;
+                background-color: #FFFFFF;
+                margin-bottom: 16px;
+            }
+            li:last-child {
+                margin-bottom: 0;
+            }
+            .halloumi, .moutabbal, .ardishoki {
+                padding-top: 0;
+            }
+            .menu-name {
+                font-size: 1.5rem;
+            }
+            .menu-text {
+                display: block;
                 margin: 0 auto;
+                padding-top: 10px;
                 padding-bottom: 10px;
                 font-family: 'Roboto Condensed', sans-serif;
             }
-            .price {
+            .menu-price {
                 font-weight: bold;
                 font-family: 'Roboto Condensed', sans-serif;
             }
-            .menu-new {
+            .menu-new, .menu-vegan, .menu-popular {
                 font-family: 'Courier New', Courier, monospace;
                 text-transform: uppercase;
                 margin-block: 20px;
                 background-color: #AB76FF;
+                transform: rotate(1.5deg);
                 display: inline-block;
                 padding: 0 12px;
-                transform: rotate(1.5deg);
                 font-weight: bold;
                 margin-bottom: 5px;
+            }
+            .menu-new {
+                background-color: #AB76FF;
+                transform: rotate(1.5deg);
             }
             .menu-vegan {
-                font-family: 'Courier New', Courier, monospace;
-                text-transform: uppercase;
-                margin-block: 20px;
                 background-color: greenyellow;
-                display: inline-block;
-                padding: 0 12px;
                 transform: rotate(-3deg);
-                font-weight: bold;
-                margin-bottom: 5px;
             }
             .menu-popular {
-                font-family: 'Courier New', Courier, monospace;
-                text-transform: uppercase;
-                margin-block: 20px;
                 background-color: #FFF136;
-                display: inline-block;
-                padding: 0 12px;
                 transform: rotate(-3deg);
-                font-weight: bold;
-                margin-bottom: 5px;
             }
         
         }
