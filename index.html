@@ -3,12 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tough Cookie</title>
+
+  <meta name="description" content="Menu for delicious tasty food from restaurant Tough Cookie">
+  <meta name="author" content="Rebecka Göthlin">
+  <meta name="keywords" content="menu, restaurant, tough, cookie, food">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Tough Cookie">
+  <meta property="og:type" content="menu">
+  <meta property="og:description" content="Menu for delicious tasty food from restaurant Tough Cookie">
+  <meta property="og:image" content="http://www.rebeckagothlin.com/images/rebecka-gothlin.jpg">
+
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed&display=swap"
@@ -19,15 +29,16 @@
 
 <body>
   <div class="wrapper">
+
     <header>
       <div class="header-menu">
         <input type="checkbox">
 
         <div class="burger-menu">
-          <button>
-            <span></span>
-            <span></span>
-            <span></span>
+          <button aria-label="open-menu">
+            <span aria-label="open-menu"></span>
+            <span aria-label="open-menu"></span>
+            <span aria-label="open-menu"></span>
           </button>
           <nav>
             <ul>
@@ -38,178 +49,185 @@
           </nav>
         </div>
 
-
-
-        <h1>Tough Cookie</h1>
+        <h1>Tough
+          <span class="desktop-only">&nbsp;</span>
+          Cookie
+        </h1>
       </div>
 
     </header>
+    <!-- page 1 -->
+    <div class="page-content">
 
-    <div class="page1">
-      <section class="page1-top">
-        <div class="tahini-container">
-          <div class="tahini-inner-container">
-            <span class="tahini">tahini</span>
-            <span class="drizzle">drizzle</span>
-            <span class="chickpeas">chickpeas</span>
-          </div>
-        </div>
+      <div class="page page1">
 
-        <div class="text1">
-          <p>
-            Main course hemp seeds Southern Italian shiitake mushrooms
-            a delicious meal banana bread lemon tahini dressing apple
-            vinaigrette veggie burgers cool cucumbers coconut sugar.
-            Seasonal edamame hummus asian pear kale bite sized ghost
-            pepper one bowl mediterranean luxury bowl cayenne Thai sun
-            pepper.
-          </p>
-        </div>
-      </section>
+        <section class="page1-top">
 
-      <section class="page1-bottom">
-        <div class="image1">
-          <div class="arrow">
-            <img src="assets/icons/arrow.svg" widht="72.08" height="59.36">
-          </div>
-        </div>
-        <div class="text2">
-          <p>
-            Crispy iceberg lettuce Caribbean red habanero blueberry chia
-            seed jam overflowing berries roasted butternut squash basmati
-            thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette
-            heat mint potato chocolate cookie seeds samosa walnut mushroom tart.
-          </p>
-          <div class="arrow-container">
-            <a href="#page2-link">Explore menu<span class="material-symbols-outlined">arrow_right_alt</span></a>
+          <div class="tahini-container">
+            <div class="tahini-inner-container">
+              <span class="tahini">tahini</span>
+              <span class="drizzle">drizzle</span>
+              <span class="chickpeas">chickpeas</span>
+            </div>
+
           </div>
 
-        </div>
-      </section>
-    </div>
-
-    <div class="page2">
-      <div id="page2-link"></div>
-      <section class="page2-top">
-        <div class="image2">
-          <img src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg"
-            alt="a blue and black bowl containing a delicious dish full of e.g. chickpeas, beans, olives and figs"
-            width="1796" height="2183" loading="lazy">
-          <img src="assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash.jpg"
-            alt="a blue bowl of hummus with chickpeas on top of it" width="1797" height="2397" loading="lazy">
-          <img src="assets/photos/mor-shani-kQloRmVQYIs-unsplash.jpg"
-            alt="three bowls full of food on a blue table cloth" width="2326" height="1797" loading="lazy">
-        </div>
-      </section>
-      <section class="page2-bottom">
-        <ul class="food-menu">
-          <li class="halloumi">
-            <span class="menu-name">halloumi moklieh</span>
-            <span class="menu-new">new!</span>
-            <span class="menu-text">Deep-fried halloumi</span>
-            <span class="menu-price">195 kr</span>
-          </li>
-          <li>
-            <span class="menu-name">mojaddara</span>
-            <span class="menu-text">green lentis with rice and fried onion</span>
-            <span class="menu-price">135 kr</span>
-          </li>
-          <li>
-            <span class="menu-name">chiar & laban</span>
-            <span class="menu-text">lebanese spicy yoghurt with chopped cucumber</span>
-            <span class="menu-price">95 kr</span>
-          </li>
-          <li>
-            <span class="menu-name">warak inab</span>
-            <span class="menu-text">rice- and veggie-filled dolma with mint and lemon</span>
-            <span class="menu-price">85 kr</span>
-          </li>
-          <li class="moutabbal">
-            <span class="menu-name">moutabbal batinzian</span>
-            <span class="menu-vegan">vegan</span>
-            <span class="menu-text">smoked chopped aubergine, sesame paste, garlic and lemon</span>
-            <span class="menu-price">175 kr</span>
-          </li>
-          <li class="ardishoki">
-            <span class="menu-name">ardishoki</span>
-            <span class="menu-popular">popular</span>
-            <span class="menu-text">artichoke with lemon and garlic marinade</span>
-            <span class="menu-price">199 kr</span>
-          </li>
-          <li>
-            <span class="menu-name">mhamara</span>
-            <span class="menu-text">spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
-            <span class="menu-price">123 kr</span>
-          </li>
-          
-        </ul>
-      </section>
-    </div>
-
-    <div class="page3">
-      <section class="page3-top">
-        <h4>Book your table</h4>
-        <form>
-          <label>
-            <span>Name</span>
-            <input type="text">
-          </label>
-          <label>
-            <span>E-mail</span>
-            <input type="text">
-          </label>
-          <label>
-            <span>Phone</span>
-            <input type="text">
-          </label>
-          <label>
-            <span>Date</span>
-            <input type="text">
-          </label>
-          <label>
-            <span>Party size</span>
-            <input type="text">
-          </label>
-          <label>
-            <span>Allergies</span>
-            <input type="text">
-          </label>
-
-          <div class="form-buttons">
-            <label>
-              <input type="reset" value="Cancel">
-            </label>
-            <label>
-              <input type="submit" value="Request">
-            </label>
+          <div class="text1">
+            <p>
+              Main course hemp seeds Southern Italian shiitake mushrooms
+              a delicious meal banana bread lemon tahini dressing apple
+              vinaigrette veggie burgers cool cucumbers coconut sugar.
+              Seasonal edamame hummus asian pear kale bite sized ghost
+              pepper one bowl mediterranean luxury bowl cayenne Thai sun
+              pepper.
+            </p>
           </div>
-        </form>
-      </section>
+        </section>
 
-      <section class="page3-bottom">
-
-        <div class="contact-list">
-          <div class="contact-bg-image"></div>
-          <div class="text3">
-            <ul>
-              <li class="phone"><span class="material-symbols-outlined">call</span></li>
-              <li class="phone-text">+46 8 123 45 67</li>
-              <li class="at"><span class="material-symbols-outlined">alternate_email</span></li>
-              <li class="at-text">book@toughcookie.com</li>
-              <li class="location"><span class="material-symbols-outlined">location_on</span></li>
-              <li class="location-text">Brända Tomten 111 31 Stockholm</li>
-            </ul>
+        <section class="page1-bottom">
+          <div class="image1">
+            <div class="arrow">
+              <img src="assets/icons/arrow.svg" widht="72.08" height="59.36">
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="text2">
+            <p>
+              Crispy iceberg lettuce Caribbean red habanero blueberry chia
+              seed jam overflowing berries roasted butternut squash basmati
+              thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette
+              heat mint potato chocolate cookie seeds samosa walnut mushroom tart.
+            </p>
+            <div class="arrow-container">
+              <a href="#page2-link">Explore menu<span class="material-symbols-outlined">arrow_right_alt</span></a>
+            </div>
 
-      <section>
-        <div class="cookie-banner">
-          <p class="cookie-p">You should accept cookies</p>
-          <div class="cookie-buttons">
-            <button class="decline">Decline</button>
-            <button class="accept">Accept</button>
           </div>
+        </section>
+      </div>
+
+      <!-- page 2 -->
+      <div class="page page2">
+        <section class="page2-top">
+          <div class="image2">
+            <div class="image2-container">
+              <img class="menu-image1" src="assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg"
+                alt="a blue and black bowl containing a delicious dish full of e.g. chickpeas, beans, olives and figs" width="1796" height="2183" loading="lazy">
+              <img class="menu-image2" src="assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash.jpg"
+                alt="a blue bowl of hummus with chickpeas on top of it" width="1797" height="2397" loading="lazy">
+              <img class="menu-image3" src="assets/photos/mor-shani-kQloRmVQYIs-unsplash.jpg"
+                alt="three bowls full of food on a blue table cloth" width="2326" height="1797" loading="lazy">
+            </div>
+            
+          </div>
+        </section>
+
+        <div id="page2-link"></div>
+        <section class="page2-bottom">
+          <ul class="food-menu">
+            <li class="menu-halloumi">
+              <span class="menu-name">halloumi moklieh<span class="menu-new">new!</span></span>
+              <span class="menu-text">Deep-fried halloumi</span>
+              <span class="menu-price">195 kr</span>
+            </li>
+            <li>
+              <span class="menu-name">mojaddara</span>
+              <span class="menu-text">Green lentis with rice and fried onion</span>
+              <span class="menu-price">135 kr</span>
+            </li>
+            <li>
+              <span class="menu-name">chiar & laban</span>
+              <span class="menu-text">Lebanese spicy yoghurt with chopped cucumber</span>
+              <span class="menu-price">95 kr</span>
+            </li>
+            <li>
+              <span class="menu-name">warak inab</span>
+              <span class="menu-text">Rice- and veggie-filled dolma with mint and lemon</span>
+              <span class="menu-price">85 kr</span>
+            </li>
+            <li class="menu-moutabbal">
+              <span class="menu-name">moutabbal batinzian<span class="menu-vegan">vegan</span></span>
+              <span class="menu-text">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
+              <span class="menu-price">175 kr</span>
+            </li>
+            <li class="menu-ardishoki">
+              <span class="menu-name">ardishoki<span class="menu-popular">popular</span></span>
+              <span class="menu-text">Artichoke with lemon and garlic marinade</span>
+              <span class="menu-price">199 kr</span>
+            </li>
+            <li>
+              <span class="menu-name">mhamara</span>
+              <span class="menu-text">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
+              <span class="menu-price">123 kr</span>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+
+      <!-- page 3 -->
+      <div class="page page3">
+          <section class="page3-top">
+            <h4>Book your table</h4>
+            <form>
+              <ul class="form-container">
+
+                <li class="form-row">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Name">
+                </li>
+                <li class="form-row">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="Email">
+                </li>
+                <li class="form-row">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" placeholder="Phone">
+                </li>
+                <li class="form-row">
+                  <label for="date">Date</label>
+                  <input type="date" id="date">
+                </li>
+                <li class="form-row">
+                  <label for="party-size">Party size</label>
+                  <input type="text" id="party-size" placeholder="Party size">
+                </li>
+                <li class="form-row">
+                  <label for="allergies">Allergies</label>
+                  <input type="text" id="allergies" placeholder="Allergies">
+                </li>
+                <li class="form-row">
+                  <button type="reset">Cancel</button>
+                  <button type="submit">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </section>
+      
+
+          <section class="page3-bottom">
+            <div class="contact-list">
+              <div class="contact-bg-image"></div>
+              <div class="text3">
+                <ul>
+                  <li class="phone"><span class="material-symbols-outlined">call</span></li>
+                  <li class="phone-text">+46 8 123 45 67</li>
+                  <li class="at"><span class="material-symbols-outlined">alternate_email</span></li>
+                  <li class="at-text">book@toughcookie.com</li>
+                  <li class="location"><span class="material-symbols-outlined">location_on</span></li>
+                  <li class="location-text">Brända Tomten 111 31 Stockholm</li>
+                </ul>
+              </div>
+            </div>
+        </section>
+     </div>
+  
+  <!-- cookie -->
+    <div class="cookie">
+      <section class="cookie-banner">
+        <p class="cookie-p">You should accept cookies</p>
+        <div class="cookie-buttons">
+          <button class="decline">Decline</button>
+          <button class="accept">Accept</button>
         </div>
       </section>
     </div>
