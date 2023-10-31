@@ -98,8 +98,12 @@ header {
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
         text-align: center;
+    }
+    li {
+        margin: 30px;
+        font-size: 3rem;
     }
     h1 {
         text-align: center;
@@ -119,7 +123,7 @@ header {
     .tahini-container {
         position: relative;
         text-transform: uppercase;
-        min-width: 200px;
+        min-width: 100px;
         min-height: 200px;
     }
         .tahini-inner-container {
@@ -151,9 +155,9 @@ header {
     .text1 {
         color: #00FF38;
         text-align: justify;
-        width: 70%;
         margin: 0 auto;
-        font-size: 2rem;
+        padding: 30px;
+        font-size: 1.5rem;
     }
     .page1-bottom {
         .image1 {
@@ -165,6 +169,7 @@ header {
             margin: 20px;
             margin: 0 auto;
             position: relative;
+            margin-bottom: 20px;
             &:hover {
                 .arrow {
                     bottom: 16px;
@@ -182,26 +187,25 @@ header {
         .text2 {
             background: white;
             color: #AB76FF;
-            font-size: 2rem;
-            padding: 1px 15px 1px 15px;
+            font-size: 1.5rem;
+            padding: 1px 15px 30px 10px;
             text-align: justify;
-            width: 65%;
+            width: 85%;
             margin: 0 auto;
             border-left: 7px solid #FFF136;
         }
         .arrow-container {
+                position: absolute;
+                .arrow2 {
+                    width: 20px;
+                    height: 20px;
+                }
+            } 
             a {
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-            }
-           .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-        } 
+            
     }
 }
 .page2 {
@@ -228,7 +232,6 @@ header {
             .menu-image3 {
                 grid-column: span 4;
             }
-            
         }
     }
     .page2-bottom {
@@ -299,6 +302,7 @@ header {
     position: relative;
     background-color: #00FF38;
     color: black; 
+    padding-bottom: 20px;
     .page3-top {
         border-left: 10px solid white;
     }
@@ -309,6 +313,7 @@ header {
         text-transform: uppercase;
     } 
     .form-container {
+        padding: 0;
         text-align: center;
         width: 300px;
         margin: 0 auto;
@@ -317,13 +322,16 @@ header {
         display: flex;
         flex-direction: column;
     }
+    .form-row {
+        margin-bottom: 7px;
+    }
     input[type=date] {
         width: 200px;
         height: 20px;
         display: block;
         border-radius: 7px;
         border: none;
-        margin-left: 11%;
+        margin-left: 17%;
     }
     input[type=text] {
         border-radius: 7px;
@@ -447,9 +455,9 @@ header {
     .cookie-p {
         margin: 0;
         font-family: 'Roboto Condensed', sans-serif;
-    }            
+    }
     .decline {
-        width: 90px;
+        width: 80px;
         background-color: #FFF136;
         border: none;
         border-radius: 7px;
@@ -460,7 +468,7 @@ header {
         color: black;
     }
     .accept {
-        width: 90px;
+        width: 80px;
         background-color: #00FF38;
         border: none;
         border-radius: 7px;

@@ -16,29 +16,34 @@ header {
         position: fixed;
         height: 100vh;
     }
-
+    .burger-menu {
+        button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 30px;
+            left: 30px;
+        }
+    }
     h1 {
         max-width: 25px;
         word-break: break-all;
-        margin-top: 70px;
+        margin-top: 90px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 .page-content {
     margin-left: 8.3vw;
-
     .page {
         min-height: 100vh;
     }
-
     .page1,
     .page2 {
         border-left: 10px solid #FFF136;
         border-right: 10px solid #FFF136;
     }
-
     .page1 {
         .page1-top {
             display: grid;
@@ -51,7 +56,7 @@ header {
 
             .text1 {
                 grid-column: span 7;
-                font-size: 2.5rem;
+                font-size: 2.6rem;
                 text-align: left;
             }
         }
@@ -61,17 +66,16 @@ header {
             display: grid;
             grid-template-columns: repeat(11, minmax(0, 1fr));
             gap: 16px;
-
             .image1 {
                 grid-column: span 5;
                 width: 400px;
                 height: 400px;
             }
-
             .text2 {
                 grid-column: span 6;
                 height: 100%;
                 padding-top: 20px;
+                margin-bottom: 30px;
                 width: 100%;
                 font-size: 2.5rem;
                 text-align: left;
@@ -85,78 +89,101 @@ header {
             grid-template-columns: repeat(11, minmax(0, 1fr));
             gap: 16px;
             padding-bottom: 20px;
-
-            .food-menu {
-                padding: 0;
-                list-style: none;
-                margin: 0;
-                grid-column: span 11;
-
-                li {
-                    display: grid;
-                    grid-template-columns: repeat(11, minmax(0, 1fr));
-                    gap: 16px;
-                    text-align: left;
-
-                    .menu-name {
-                        grid-column: 1 / span 4;
-                        margin-left: 8px;
-                        font-size: 1.5rem;
-                    }
-
-                    .menu-text {
-                        grid-column: span 6;
-                        margin-left: 0;
-                    }
-
-                    .menu-price {
-                        grid-column: span 1;
-                        margin: 0 auto;
-                        font-size: 1.5rem;
-                        font-weight: bold;
-                        font-family: 'Jockey One', sans-serif;
-                    }
-
-                    .menu-new,
-                    .menu-vegan,
-                    .menu-popular {
-                        margin-left: 10px;
-                        font-size: 1rem;
-                        padding-top: 0;
-                        /*eventuellt ta bort*/
-                    }
+        }
+        .food-menu {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            grid-column: span 11;
+            li {
+                display: grid;
+                grid-template-columns: repeat(11, minmax(0, 1fr));
+                gap: 16px;
+                text-align: left;
+                .menu-name {
+                    grid-column: 1 / span 4;
+                    margin-left: 8px;
+                    font-size: 1.5rem;
+                }
+                .menu-text {
+                    grid-column: span 6;
+                    margin-left: 0;
+                }
+                .menu-price {
+                    grid-column: span 1;
+                    margin: 0 auto;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    font-family: 'Jockey One', sans-serif;
+                }
+                .menu-new,
+                .menu-vegan,
+                .menu-popular {
+                    margin-left: 10px;
+                    font-size: 1rem;
+                    padding-top: 0;
+                    /*eventuellt ta bort*/
                 }
             }
         }
     }
 
     .page3 {
-        border-left: 10px solid white;
-        display: grid;
-        grid-template-columns: repeat(11, minmax(0, 1fr));
-        gap: 16px;
-        align-items: center;
-        background-color: #00FF38;
-    }
-    h4 {
-        font-size: 2.5rem;
-        padding-left: 8px;
-        text-align: left;
-        grid-column: span 4;
-        text-transform: uppercase;
-    } 
-    .page3-top {
-        border-left: none;
-        grid-column: span 5;
-        padding-left: 8px;
-        display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }    
-    
-    .page3-bottom {
-        border-left: none;
-        grid-column: span 6;
+        h4 {
+            font-size: 4rem;
+        }
+        .form-container {
+            width: 500px;
+        }
+        .page3-bottom {
+            .contact-bg-image {
+                width: 350px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .material-symbols-outlined {
+                font-size: 2.8rem;
+            }
+            .phone {
+                position: absolute;
+                top: 35%;
+                left: 13%;
+            }
+            .phone-text {
+                position: absolute;
+                top: 35%;
+                left: 35%;
+                font-size: 1.3rem;
+            }
+            .at {
+                position: absolute;
+                top: 52%;
+                left: 13%;
+            }
+            .at-text {
+                position: absolute;
+                top: 52%;
+                left: 35%;
+                font-size: 1.3rem;
+            }
+            .location {
+                position: absolute;
+                top: 72%;
+                left: 13%;
+                width: 150px;
+                text-align: justify;
+            }
+            .location-text {
+                position: absolute;
+                top: 72%;
+                left: 35%;
+                width: 120px;
+                text-align: left;
+                font-size: 1.3rem;
+            }
+        }
     }
 }
 
