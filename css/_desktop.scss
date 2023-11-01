@@ -17,7 +17,7 @@ header {
         height: 100vh;
     }
     .burger-menu {
-        button {
+        .menu-button {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -129,7 +129,7 @@ header {
     }
 
     .page3 {
-        h4 {
+        h2 {
             font-size: 4rem;
         }
         .form-container {

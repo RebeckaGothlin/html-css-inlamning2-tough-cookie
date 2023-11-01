@@ -28,23 +28,23 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <main class="wrapper">
 
     <header>
       <div class="header-menu">
         <input type="checkbox">
 
         <div class="burger-menu">
-          <button aria-label="open-menu">
-            <span class="span1" aria-label="open-menu"></span>
-            <span class="span2" aria-label="open-menu"></span>
-            <span class="span3" aria-label="open-menu"></span>
+          <button class="menu-button" aria-label="open-menu">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
           </button>
           <nav>
             <ul>
-              <li>home</li>
-              <li>menu</li>
-              <li>book table</li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">book table</a></li>
             </ul>
           </nav>
         </div>
@@ -56,13 +56,11 @@
       </div>
 
     </header>
-    <!-- page 1 -->
+    
     <div class="page-content">
-
+      <!-- page 1 -->
       <div class="page page1">
-
         <section class="page1-top">
-
           <div class="tahini-container">
             <div class="tahini-inner-container">
               <span class="tahini">tahini</span>
@@ -85,11 +83,11 @@
         </section>
 
         <section class="page1-bottom">
-          <div class="image1">
+          <figure class="image1">
             <div class="arrow">
-              <img src="assets/icons/arrow.svg" widht="72.08" height="59.36">
+              <img src="assets/icons/arrow.svg" widht="72.08" height="59.36" alt="white arrow pointing down">
             </div>
-          </div>
+          </figure>
           <div class="text2">
             <p>
               Crispy iceberg lettuce Caribbean red habanero blueberry chia
@@ -99,7 +97,7 @@
             </p>
             <div class="arrow-container">
               <a href="#page2-link">Explore menu</a>
-              <img class="arrow2" src="assets/icons/arrow2.svg" widht="72.08" height="59.36">
+              <img class="arrow2" src="assets/icons/arrow2.svg" widht="34" height="30" alt="black arrow pointing right">
             </div>
           </div>
         </section>
@@ -124,7 +122,7 @@
         <section class="page2-bottom">
           <ul class="food-menu">
             <li class="menu-halloumi">
-              <span class="menu-name">halloumi moklieh<span class="menu-new">new!</span></span>
+              <span class="menu-name">halloumi moklieh<span class="menu-new"> new!</span></span>
               <span class="menu-text">Deep-fried halloumi</span>
               <span class="menu-price">195 kr</span>
             </li>
@@ -144,12 +142,12 @@
               <span class="menu-price">85 kr</span>
             </li>
             <li class="menu-moutabbal">
-              <span class="menu-name">moutabbal batinzian<span class="menu-vegan">vegan</span></span>
+              <span class="menu-name">moutabbal batinzian<span class="menu-vegan"> vegan</span></span>
               <span class="menu-text">Smoked chopped aubergine, sesame paste, garlic and lemon</span>
               <span class="menu-price">175 kr</span>
             </li>
             <li class="menu-ardishoki">
-              <span class="menu-name">ardishoki<span class="menu-popular">popular</span></span>
+              <span class="menu-name">ardishoki<span class="menu-popular"> popular</span></span>
               <span class="menu-text">Artichoke with lemon and garlic marinade</span>
               <span class="menu-price">199 kr</span>
             </li>
@@ -158,7 +156,6 @@
               <span class="menu-text">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</span>
               <span class="menu-price">123 kr</span>
             </li>
-
           </ul>
         </section>
       </div>
@@ -166,7 +163,7 @@
       <!-- page 3 -->
       <div class="page page3">
         <section class="page3-top">
-          <h4>Book your table</h4>
+          <h2>Book your table</h2>
           <form>
             <ul class="form-container">
               <li class="form-row">
@@ -231,7 +228,7 @@
       </section>
     </div>
 
-  </div>
+  </main>
 </body>
 
 </html>
