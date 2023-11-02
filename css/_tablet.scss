@@ -24,9 +24,15 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            top: 20px;
+            top: 30px;
+            width: 48px;
+            height: 48px;
+            span {
+                width: 35px;
+                height: 6px;
+            }
+        }
     }
-}
     h1 {
         max-width: 25px;
         word-break: break-all;
@@ -223,7 +229,7 @@ header {
     .cookie-banner {
         background-color: #AB76FF;
         position: absolute;
-        z-index: 1000;
+        z-index: 5;
         bottom: 0;
         width: 100%;
         display: flex;
