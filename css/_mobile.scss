@@ -24,10 +24,10 @@ header {
         height: 50px;
         top: 0;      
         left: 0;
-        z-index: 5;    
+        z-index: 5;
     }
-    .burger-menu {
-        .menu-button {
+    .header-burger-menu {
+        .header-menu-button {
             width: 35px;
             height: 35px;
             background: transparent;
@@ -59,27 +59,27 @@ header {
         height: 35px;
         opacity: 0;
     }
-    input:hover + .burger-menu .menu-button .span1 {
+    input:hover + .header-burger-menu .header-menu-button .header-span1 {
         transform: translateX(-2px);  
     }
-    input:hover + .burger-menu .menu-button .span2 {
+    input:hover + .header-burger-menu .header-menu-button .header-span2 {
         transform: translateX(2px);  
     }
-    input:hover + .burger-menu .menu-button .span3 {
+    input:hover + .header-burger-menu .header-menu-button .header-span3 {
         transform: translateX(-1px);  
     }
 
-    input:checked + .burger-menu .menu-button span {
+    input:checked + .header-burger-menu .header-menu-button span {
         position: absolute;
         transition: all 0.3s ease-in-out;
     }
-    input:checked + .burger-menu .menu-button span:nth-child(2){
+    input:checked + .header-burger-menu .header-menu-button span:nth-child(2){
         opacity: 0;
     }
-    input:checked + .burger-menu .menu-button span:nth-child(1){
+    input:checked + .header-burger-menu .header-menu-button span:nth-child(1){
         transform: rotate(45deg);
     }
-    input:checked + .burger-menu .menu-button span:nth-child(3){
+    input:checked + .header-burger-menu .header-menu-button span:nth-child(3){
         transform: rotate(-45deg);
     }
     nav {
@@ -94,7 +94,7 @@ header {
         visibility: hidden;
         z-index: 1;
     }
-    input:checked + .burger-menu nav {
+    input:checked + .header-burger-menu nav {
         visibility: visible;
         opacity: 1;
     }
@@ -165,7 +165,7 @@ header {
             font-size: 2.3rem;
             z-index: -1;
         }
-    .text1 {
+    .page1-text1 {
         color: #00FF38;
         text-align: justify;
         margin: 0 auto;
@@ -173,7 +173,7 @@ header {
         font-size: 1.5rem;
     }
     .page1-bottom {
-        .image1 {
+        .page1-image {
             background-image: url('/assets/photos/mae-mu-hugb85v0J04-unsplash.jpg');
             background-position: center center;
             background-size: cover;
@@ -197,8 +197,8 @@ header {
             } 
         }
     }
-    .text2 {
-        background: white;
+    .page1-text2 {
+        background-color: white;
         color: #AB76FF;
         font-size: 1.5rem;
         padding: 1px 15px 30px 10px;
