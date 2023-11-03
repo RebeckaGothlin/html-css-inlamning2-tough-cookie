@@ -196,28 +196,28 @@ header {
                 left: 8px;
             } 
         }
-        }
-        .text2 {
-            background: white;
-            color: #AB76FF;
-            font-size: 1.5rem;
-            padding: 1px 15px 30px 10px;
-            text-align: justify;
-            width: 85%;
-            margin: 0 auto;
-            border-left: 7px solid #FFF136;
-        }
-        .arrow-container {
-                position: absolute;
-                .arrow2 {
-                    width: 20px;
-                    height: 20px;
-                }
-            } 
-            a {
-                color: black;
-                text-decoration: none;
-                text-transform: uppercase;
+    }
+    .text2 {
+        background: white;
+        color: #AB76FF;
+        font-size: 1.5rem;
+        padding: 1px 15px 30px 10px;
+        text-align: justify;
+        width: 85%;
+        margin: 0 auto;
+        border-left: 7px solid #FFF136;
+    }
+    .arrow-container {
+            position: absolute;
+            .arrow2 {
+                width: 20px;
+                height: 20px;
+            }
+        } 
+        a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
             
     }
 }
@@ -345,7 +345,7 @@ header {
         border: none;
         margin-left: 17%;
     }
-    input[type=text] {
+    input[type=name], input[type=email], input[type=phone], input[type=party-size], input[type=allergies] {
         border-radius: 7px;
         border: none;
         height: 20px;
